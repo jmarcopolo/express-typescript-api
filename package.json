@@ -1,34 +1,36 @@
 {
   "name": "node-express-typings",
   "version": "1.0.0",
-  "description": "Typescript nodejs express minimal server setup with typings included",
-  "homepage": "https://github.com/mKomorowski/node-express-typings",
+  "description": "Typescript nodejs express minimal server setup configured for eko-point environment",
+  "homepage": "https://github.com/eko-point/express-typescript-api",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mKomorowski/node-express-typings"
+    "url": "https://github.com/eko-point/express-typescript-api"
   },
   "scripts": {
     "build": "tsc",
-    "start": "node app/server.js"
+    "start": "node app/server.js",
+    "tslint": "tslint",
+    "lint": "npm run tslint \"src/**/*.ts\" --force"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "dmitry serkov, mikhail ovchinnikov, mKomorowski",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.15.2",
     "compression": "^1.6.2",
     "cookie-parser": "^1.4.3",
     "cors": "^2.7.1",
     "express": "^4.14.0",
-    "express-validator": "^2.20.8",
+    "express-validator": "^2.21.0",
     "jsonwebtoken": "^7.0.1",
     "lodash": "^4.13.1",
     "serve-favicon": "^2.3.0",
     "winston": "^2.2.0"
   },
   "devDependencies": {
-    "mocha": "^2.5.3",
+    "mocha": "^3.2.0",
     "typescript": "~2.2.1",
-    "typings": "^1.3.1",
-    "tslint": "~4.5.1"
+    "typings": "^2.1.0",
+    "tslint": "~5.0.0"
   }
 }

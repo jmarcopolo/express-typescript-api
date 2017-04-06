@@ -32,7 +32,7 @@ const app = express();
 app.use(cors());
 app.use(compression());
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({extended: false}));
 app.use(expressValidator());
 
 // Routes registration

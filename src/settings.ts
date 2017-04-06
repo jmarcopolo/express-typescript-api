@@ -1,6 +1,6 @@
 import * as path from 'path';
 
-const default_environment = 'development';
+const defaultEnvironment = 'development';
 const appEnvironments = [
 	'development',
 	'production'
@@ -8,7 +8,7 @@ const appEnvironments = [
 
 const environment = (process.env.NODE_ENV) ? process.env.NODE_ENV.toLowerCase() : undefined;
 let settings = (appEnvironments.indexOf(environment) >= 0) ? require(path.join('./../config', environment)) :
-	require(path.join('./../config', default_environment));
+	require(path.join('./../config', defaultEnvironment));
 
 
 export default settings;

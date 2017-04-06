@@ -4,12 +4,12 @@ import { Response } from './../http/Response';
 import Log from './../lib/Log';
 
 export default (log: Log) => {
-  return (request: Request, response: Response, next: Function) => {
+	return (request: Request, response: Response, next: Function) => {
 
-    if(_.isObject(response.payload)) {
-      response.json(response.payload);
-    }
+		if (_.isObject(response.payload)) {
+			response.json(response.payload);
+		}
 
-    response.status(404).send();
-  };
+		response.status(404).send();
+	};
 };
