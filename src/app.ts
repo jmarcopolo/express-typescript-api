@@ -1,7 +1,7 @@
 'use strict';
 import * as bodyParser from 'body-parser';
 import * as cors from 'cors';
-import Config from './lib/Config';
+import Config from './lib/config';
 import * as compression from 'compression';
 import * as express from 'express';
 import expressValidator = require('express-validator');

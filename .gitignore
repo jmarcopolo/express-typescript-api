@@ -1,5 +1,13 @@
 app/**
 
+# IDE #
+.idea/
+/idea/
+.idea/**
+/vs/
+.vs/
+*.swp
+
 # Created by .ignore support plugin (hsz.mobi)
 ### Node template
 # Logs
@@ -60,12 +68,5 @@ typings/
 
 # dotenv environment variables file
 .env
-
-# IDE #
-.idea/
-/idea/
-/vs/
-.vs/
-*.swp
 
 app/

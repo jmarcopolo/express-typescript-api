@@ -1,7 +1,7 @@
 import * as _ from 'lodash';
-import { Request } from './../http/Request';
-import { Response } from './../http/Response';
-import Log from './../lib/Log';
+import { Request } from '../http/request';
+import { Response } from '../http/response';
+import Log from '../lib/log';
 
 export default (log: Log) => {
 	return (request: Request, response: Response, next: Function) => {

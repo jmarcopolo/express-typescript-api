@@ -1,5 +1,5 @@
-import { Request } from './../http/Request';
-import { Response } from './../http/Response';
+import { Request } from '../http/request';
+import { Response } from '../http/response';
 import * as exampleModel from './../models/example';
 
 export function index(request: Request, response: Response, next: Function) {

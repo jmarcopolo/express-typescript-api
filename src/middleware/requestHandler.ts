@@ -1,7 +1,7 @@
-import Config from './../lib/Config';
-import { Request } from './../http/Request';
-import { Response } from './../http/Response';
-import Log from './../lib/Log';
+import Config from '../lib/config';
+import { Request } from '../http/request';
+import { Response } from '../http/response';
+import Log from '../lib/log';
 
 export default (config: Config, log: Log) => {
 	const mergeValidationErrors = (errors) => {
