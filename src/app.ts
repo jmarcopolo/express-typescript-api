@@ -3,10 +3,8 @@ import * as bodyParser from 'body-parser';
 import * as cors from 'cors';
 import Config from './lib/Config';
 import * as compression from 'compression';
-import * as jwt from 'jsonwebtoken';
 import * as express from 'express';
 import expressValidator = require('express-validator');
-import Log from './lib/Log';
 import { Logger, transports } from 'winston';
 
 // Middleware

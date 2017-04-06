@@ -5,5 +5,5 @@ module.exports = {
   log: {
       level: 'debug'
   },
-  port: 3000
+  port: 3020
 };

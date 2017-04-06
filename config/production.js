@@ -5,5 +5,5 @@ module.exports = {
   log: {
       level: 'info'
   },
-  port: 3000
+  port: 3020
 };
