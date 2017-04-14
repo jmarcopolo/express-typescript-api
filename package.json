@@ -1,5 +1,5 @@
 {
-  "name": "node-express-typings",
+  "name": "sample-node-express-typeorm-api",
   "version": "1.0.0",
   "description": "Typescript nodejs express minimal server setup configured for eko-point environment",
   "homepage": "https://github.com/eko-point/express-typescript-api",
@@ -8,29 +8,42 @@
     "url": "https://github.com/eko-point/express-typescript-api"
   },
   "scripts": {
-    "build": "tsc",
-    "start": "node app/server.js",
+    "build1": "npm run lint && npm run compile",
+    "compile": "tsc -p .",
+    "start": "node app/app.js",
+    "debug": "node_modules/.bin/nodemon --exec \"npm run lint && npm run tsnode\"",
     "tslint": "tslint",
-    "lint": "npm run tslint \"src/**/*.ts\" --force"
+    "lint": "npm run tslint \"src/**/*.ts\" --force",
+    "tsnode": "./node_modules/.bin/ts-node.cmd -d src/app.ts"
   },
-  "author": "dmitry serkov, mikhail ovchinnikov, mKomorowski",
+  "author": "",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.15.2",
     "compression": "^1.6.2",
     "cookie-parser": "^1.4.3",
     "cors": "^2.7.1",
-    "express": "^4.14.0",
+    "express": "^4.15.2",
     "express-validator": "^2.21.0",
     "jsonwebtoken": "^7.0.1",
     "lodash": "^4.13.1",
     "serve-favicon": "^2.3.0",
-    "winston": "^2.2.0"
+    "winston": "^2.3.1",
+    "sqlite3": "^3.1.8",
+    "inversify": "^3.3.0",
+    "typeorm": "^0.0.11",
+    "iridium": "^7.1.6"
   },
   "devDependencies": {
+    "@types/sqlite3": "^2.2.33",
+    "@types/node": "^7.0.12",
+    "@types/express": "^4.0.35",
+    "@types/express-validator": "^2.20.33",
+    "@types/winston": "^2.3.0",
     "mocha": "^3.2.0",
-    "typescript": "~2.2.1",
-    "typings": "^2.1.0",
-    "tslint": "~5.0.0"
+    "typescript": "~2.2.2",
+    "tslint": "~5.0.0",
+    "ts-node": "^3.0.2",
+    "nodemon": "^1.11.0"
   }
 }

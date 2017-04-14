@@ -2,6 +2,8 @@
 import * as bodyParser from 'body-parser';
 import * as cors from 'cors';
 import Config from './lib/config';
+import TYPES from './types';
+import container from './inversify.config';
 import * as compression from 'compression';
 import * as express from 'express';
 import expressValidator = require('express-validator');

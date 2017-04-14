@@ -1,6 +1,6 @@
 'use strict';
 import { Router } from 'express';
-import * as ExampleController from './../controllers/main';
+import * as ExampleController from './../controllers/main.controller';
 
 let router = Router();
 

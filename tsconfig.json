@@ -1,13 +1,18 @@
 {
   "version" : "2.2.1",
   "compilerOptions": {
-    "target" : "es5",
+    "target" : "es2015",
     "module": "commonjs",
     "noImplicitAny": false,
     "removeComments": false,
     "preserveConstEnums": true,
     "outDir": "app",
-    "sourceMap": false
+    "sourceMap": false,
+    "types": ["reflect-metadata"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "lib": ["es6"],
+    "allowUnreachableCode": true
   },
   "exclude": [
     "node_modules"
